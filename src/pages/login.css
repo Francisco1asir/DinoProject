@@ -1,0 +1,379 @@
+section#login * {
+    color: white;
+}
+
+.login {
+    background-color: lightcoral;
+    width: 30% !important;
+    position: relative;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url(https://wallpaperaccess.com/full/6274328.jpg);
+    background-size: cover;
+    padding: 25px;
+    top: 3vh;
+    /* height: 90%; */
+    /* box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.136); */
+    display: none;
+    margin: 0 auto;
+}
+.login *{
+    color: black !important;
+}
+.MuiTablePagination-select {
+    background-color: rgba(40, 40, 40, 0.783);
+    padding: 7px;
+    /* width: 10vh;
+    height: 4vh; */
+}
+
+.MuiTablePagination-toolbar {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: max-content;
+}
+
+.login h1 {
+    /* margin: 0 auto; */
+    font-size: 45px;
+    /* background-color: red; */
+    width: 100%;
+    color: white !important;
+    text-align: center;
+}
+
+.img-container {
+    position: relative;
+    top: -100%;
+    /* display: inline; */
+}
+.btnslogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+}
+
+figure#profilelog {
+    position: absolute;
+    /* width: max-content; */
+    /* background-color: lightcoral; */
+    /* height: 80vh; */
+    padding: 20px;
+    right: 0;
+    top: 0;
+    /* top: -200%; */
+    display: flex;
+    flex-direction: row-reverse;
+    /* top: 0;
+    right: 0%;
+    padding: 0; */
+}
+.proof{
+    width: max-content !important;
+    background-color: red;
+}
+img#fotoback {
+    border-radius: 100%;
+    position: relative;
+    width: 70%;
+    height: max-content;
+    /* background-color: red; */
+    /* width: 15vmin; */
+    /* cursor: pointer;
+    margin: 10px;
+    position: relative;
+    right: -14%; */
+}
+
+figure#profilelog:hover .bocadillo-cuadrado {
+    opacity: 1;
+}
+
+.bocadillo-cuadrado * {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bocadillo-cuadrado li span {
+    margin-left: 4px;
+    width: 100%;
+}
+
+.bocadillo-cuadrado {
+    position: absolute !important;
+    height: max-content;
+    list-style: none;
+    opacity: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: .3s;
+    /* display: none; */
+    border-radius: 10px;
+    width: max-content;
+    top: 120px;
+    z-index: 20;
+    left: -30%;
+    background: #808080e9;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+}
+
+.bocadillo-cuadrado:before {
+    border: 25px solid #808080e9;
+    content: '';
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: 114px;
+    left: calc(70% - 25px);
+    transform: rotate(180deg);
+}
+
+.logoutbtn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+.logoutbtn span {
+    margin-left: 4px;
+}
+
+.caja {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+.login h1{
+    color: white;
+}
+h1#tittleback {
+    font-size: 10vmin;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    padding: 10px;
+    /* background-color: green; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+tr.css-0:nth-child(even) td {
+    background-color: #74747472;
+}
+
+.btngoogle {
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: twist 1.6s ease-in-out infinite;
+    animation-delay: 1s;
+    margin: 0 auto;
+    border: none;
+    height: max-content;
+    box-shadow: 4px 4px 4px 4px rgba(49, 49, 49, 0.648);
+    margin-bottom: 55%;
+    margin-top: 14px;
+    cursor: pointer;
+
+}
+
+#deletebtn2 {
+
+}
+
+table {
+    background-color: rgba(52, 52, 52, 0.405);
+    /* width: 100% !important; */
+    /* height: 10vh !important; */
+
+}
+
+thead {
+    background-color: green !important;
+}
+
+th h3 {
+    padding: 10px !important;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px !important;
+}
+
+.css-1cuvso {
+    padding: 18px !important;
+    font-size: 20px;
+}
+
+.btngoogle span {
+    color: black;
+    padding-left: 25px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.MuiTablePagination-selectLabel {
+    display: none;
+}
+
+.btngoogle img {
+    width: 30px;
+}
+
+.MuiTablePagination-actions button {
+    /* width: 10vh; */
+    /* height: 10vh; */
+    color: black !important;
+    padding: 4px;
+    margin-right: 8px;
+    border-radius: 15px;
+    /* font-size: 1px; */
+}
+
+.MuiTablePagination-actions button span {
+    /* width: 10vh; */
+    /* height: 10vh; */
+    font-weight: bold;
+    color: black !important;
+    padding: 5px;
+    font-size: 20px;
+}
+.profilebtn{
+    padding: 10px;
+}
+.cablogin {
+    /* background-color: lightblue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.profilebtn span{
+    margin-left: 5px;
+}
+
+/* tfoot{
+    background-color: green;
+    max-width: 100vh !important;
+} */
+@keyframes twist {
+    10% {transform: scale(1.10) rotate(5deg);}
+    20% {transform: scale(1.10) rotate(-5deg);}
+    30% {transform: scale(1.10) rotate(5deg);}
+    40% {transform: none;}
+}
+
+@media (max-width:1500px) {
+    .login {
+        width: 50% !important;
+
+    }
+
+    .btngoogle {
+        margin-bottom: 35%;
+    }
+
+}
+
+@media (max-width:950px) {
+    .login {
+        margin-top: 45px !important;
+    }
+
+}
+
+@media (max-width:800px) {
+    .login {
+        width: 80% !important;
+
+    }
+
+    .btngoogle {
+        margin-bottom: 45%;
+    }
+
+    .MuiTablePagination-displayedRows {
+        display: none;
+    }
+
+    img#fotoback {
+        /* width: 70px;
+        right: -25%; */
+
+    }
+
+    h1#tittleback {
+        font-size: 8vmin;
+    }
+
+}
+
+@media (max-width:500px) {
+
+
+    img#fotoback {
+        width: 12vmin;
+        /* right: -38%; */
+
+    }
+
+    .cablogin {
+        flex-direction: column;
+    }
+
+    .bocadillo-cuadrado {
+        top: 110px;
+    }
+
+    #profilelog {
+        display: none !important;
+
+    }
+    .btnslogin{
+        display: flex;
+    }
+
+
+}
+
+@media (max-width:400px) {
+    .login {
+        width: 95% !important;
+
+    }
+
+    .btngoogle {
+        margin-bottom: 95%;
+    }
+
+    .MuiTablePagination-toolbar {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        /* flex-direction: column !important; */
+        width: max-content;
+        /* background-color: red; */
+        /* width: 40vh; */
+        width: 100%;
+    }
+
+
+}

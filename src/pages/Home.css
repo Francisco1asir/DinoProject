@@ -1,0 +1,321 @@
+.cnt {
+    height: 100vh;
+    background-position: center center;
+    /* para centrar la imagen */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapers.com/images/hd/ark-f2p3c4e2twsyaj0q.jpg'); */
+}
+
+.none {
+    display: none !important;
+}
+h1#homeh1{
+    margin-top: 20px;
+}
+h1#tittle-home {
+    color: white;
+    font-size: 12vmin;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    /* background-color: lightblue; */
+    text-align: center;
+    /* margin: 0 auto; */
+    position: relative;
+    /* right: -25%; */
+    margin-top: 20px;
+    /* top: 4vh; */
+}
+form#formsearch{
+    position: relative;
+    /* background-color: lightblue; */
+}
+h1#icon{
+    color: black !important;
+    position: absolute;
+    transition: .3s;
+    /* left: 70%; */
+    cursor: pointer;
+    right: 28%;
+    top: 32%;
+    font-size: 21px;
+    /* background-color: red; */
+}
+.inputsearch {
+    width: 50%;
+    /* height: 8vh; */
+    padding: 28px;
+    background: rgb(231, 231, 231);
+    border-radius: 40px;
+    padding-left: 20px;
+    position: relative;
+    right: -25%;
+    transition: .5s;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.429);
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* .inputsearch:focus{
+    width: 50%;
+    right: -25%;
+
+} */
+.active{
+    /* background-color: rgb(123, 37, 37); */
+    padding: 7px;
+    background: rgb(117,92,70);
+    background: linear-gradient(37deg, rgba(117,92,70,1) 0%, rgba(231,231,231,1) 99%, rgba(182,182,182,1) 100%);    border-radius: 12px;
+    /* border-bottom: 4px solid brown; */
+    /* border-radius: 40%; */
+}
+.dinodescript {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+h1#modaltittle {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 8vmin;
+    /* background-color: red; */
+    color: white;
+    width: 100%;
+}
+
+::placeholder {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    object-fit: cover;
+    /* width: 100vh !important;
+    height: 100vh !important; */
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.hola {
+    position: absolute;
+    top: -18%;
+    left: 65%;
+    z-index: -2;
+    width: 270px;
+}
+
+.hola2 {
+    position: absolute;
+    transform: scale(-1, 1);
+    /* Invierte la imagen horizontalmente */
+    width: 200px;
+    bottom: -1%;
+    left: -10%;
+    z-index: -10;
+
+}
+.modalbutton {
+    display: flex;
+    flex-direction: row-reverse;
+    /* background-color: red; */
+    width: 100%;
+    margin-bottom: 75px;
+    /* background-color: rgba(255, 255, 255, 0.791); COPIAR COLOR PARA LOS TEXFIELD*/
+}
+
+.MuiBox-root { /*EL ADD SE HA IDO A LA MIERDA*/
+    /* background-image: linear-gradient(to right top, #cbcbcb, #b6b6b6, #a1a1a1, #8c8c8c, #787878); */
+    width: 100% !important;
+    height: 100% !important;
+    overflow-y: scroll;
+    height: max-content;
+    position: relative;
+    background-size: cover;
+    border: none;
+    border-radius: 12px;
+    /* margin: 30px; */
+    background-repeat: no-repeat;
+    /* filter: brightness(0.2); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://c4.wallpaperflare.com/wallpaper/511/295/662/video-game-ark-survival-evolved-wallpaper-preview.jpg);
+}
+
+.items {
+    width: 17%;
+    /* background: rgb(83,82,82);
+    background: linear-gradient(37deg, rgba(83,82,82,1) 1%, rgba(157,153,153,1) 81%);   */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.307), rgba(0, 0, 0, 0.5)),url(https://wallpaperaccess.com/full/1446065.jpg);
+    /* margin: 20px; */
+    /* gap: 20px; */
+    border-radius: 10px;
+    margin-right: 40px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+#deletebtn{
+    background-color: rgb(194, 13, 13);
+    margin-top: 10px;
+}
+.btns{
+    /* background-color: green; */
+    /* display: flex; */
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.cardscollection {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    /* background-color: lightcoral; */
+    width: 100%;
+}
+.cardscollection *{
+    color: white;
+}
+.cardscollection h1{
+    font-size: 24px;
+    /* text-align: center; */
+    margin-top: 10px;
+}
+figure#figimg {
+    max-width: 100%;
+    /* height: 50%; */
+    display: flex;
+    justify-content: center;
+}
+
+img#dinosimg {
+    /* max-width: 100%;
+    height: 100%; */
+    max-width: 100%;
+    height: 25vh;
+}
+
+.dinopeso {
+    width: 8%;
+    height: 3vh;
+}
+
+.cntdatos {
+    display: flex;
+    gap: 6px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+}
+.cntdatos img{
+    width: 3vh;
+}
+.btnmovil{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+#btnclose-movil{
+    background-color: red;
+    /* position: absolute; */
+    /* left: 55%; */
+    /* top: -20%; */
+    /* margin-bottom: 10px; */
+}
+.none2{
+    display: none !important;
+    margin-right: 10px !important;
+}
+@media (max-width:1500px) {
+
+    .items {
+        width: 29%;
+    }
+    /* h1#tittle-terr{
+          width: 50%;
+
+    } */
+}
+
+@media (max-width:1200px) {
+
+    .items {
+        width: 40%;
+    }
+}
+@media (max-width:900px) {
+
+    #btnclose{
+        position: relative;
+        top: 4%;
+      }
+
+}
+
+@media (max-width:800px) {
+
+    .items {
+        width: 67%;
+    }
+    #fotoback{
+        /* display: none; */
+        width: 50%;
+    }
+
+
+}
+@media (max-width:600px) {
+
+    .MuiBox-root {
+        width: 100% !important;
+        height: 100vh;
+        overflow-y: scroll;
+
+    }
+    .hola, .hola2{
+        display: none;
+    }
+    h1#modaltittle{
+        /* font-size: 8vmin; */
+        /* background-color: red; */
+        width: 75%;
+    }
+    #btnclose{
+        display: none;
+      }
+}
+@media (max-width:500px) {
+
+    .items {
+        width: 93%;
+        margin-right: 0;
+    }
+    .inputsearch {
+        width: 100%;
+        
+        right: 0;
+    }
+    h1#icon{
+        /* display: none; */
+        right: 13%;
+    }
+    .none2{
+        display: flex !important;
+    }
+  
+}
