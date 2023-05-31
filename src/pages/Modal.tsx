@@ -54,7 +54,7 @@ export default function TransitionsModal() {
         <Fade in={open}>
           <Box sx={style}>
             {/* <Button id='btnclose' onClick={handleClose}><FontAwesomeIcon icon={faArrowLeft} /></Button> */}
-            <AddDino></AddDino>
+            <AddDino/>
             <div className="btnmovil">
               <Button id='btnclose-movil' onClick={handleClose} variant='contained'>CLOSE</Button>
             </div>

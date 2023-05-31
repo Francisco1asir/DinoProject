@@ -17,7 +17,8 @@ h1#tittle-home {
     color: white;
     font-size: 12vmin;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     /* background-color: lightblue; */
     text-align: center;
     /* margin: 0 auto; */
@@ -256,6 +257,10 @@ img#dinosimg {
 
     .items {
         width: 40%;
+    }
+    h1#tittle-home{
+        width: 100%;
+
     }
 }
 @media (max-width:900px) {

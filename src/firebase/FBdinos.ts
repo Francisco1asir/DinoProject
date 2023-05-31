@@ -4,6 +4,8 @@ import { IDinos } from "../interfaces/IDinos";
 import { firebaseConfig } from "./common/firebaseConfig";
 import { nanoid } from "nanoid";
 import { useState } from "react";
+import { IMasiva } from "../interfaces/IMasiva";
+import dinosmasiva from '../data/dinosmasiva.json'
 
 export const app = initializeApp(firebaseConfig)
 export const db = getFirestore()
@@ -85,6 +87,22 @@ export const deleteDino = async (codigo: string) => {
     await deleteDoc(doc(db, "Dinos", codigo))
     window.location.reload();
 }
+
+//CARGA MASIVA
+export const masivadinos = async () => {
+    try {
+        console.log('carga de datos...');
+        dinosmasiva.map(async (masive) => {
+            const codigo = nanoid(20);
+            const docRef = doc(db, "Dinos", codigo);
+            await setDoc(docRef, { codigo: codigo, ...masive });
+            window.location.reload();
+        });
+    } catch (error) {
+        console.log(error);
+    }
+};
+
 
 //INTENTO DE ACTUALIZACION 
 // const dinosRef2 = doc(db, "Dinos", "fBT0JG733PoBXAO9rCEM");

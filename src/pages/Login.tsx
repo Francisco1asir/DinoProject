@@ -10,13 +10,14 @@ import UnstyledTable from './Backend';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightFromBracket, faUser } from '@fortawesome/free-solid-svg-icons';
 import TransitionsModal from './Modal';
-
+import { masivadinos } from '../firebase/FBdinos';
+import UploadIcon from '@mui/icons-material/Upload';
 
 export const Login = () => {
   const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
-    // Comprueba si hay un usuario autenticado en el almacenamiento local al cargar la página
+    // Comprueba si hay un usuario autenticado 
     const storedUser = localStorage.getItem('user');
     if (storedUser) {
       setUser(JSON.parse(storedUser));
@@ -28,7 +29,7 @@ export const Login = () => {
       .then((result) => {
         const user = result.user;
         setUser(user);
-        // Guarda la información del usuario en el almacenamiento local
+        // Guarda la información del users
         localStorage.setItem('user', JSON.stringify(user));
       })
       .catch((error) => {
@@ -37,11 +38,10 @@ export const Login = () => {
   };
 
   const handleLogout = () => {
-    // Muestra una ventana de confirmación antes de cerrar la sesión
+    // Ventana cierre
     const confirmed = window.confirm('¿Estás seguro de que deseas cerrar sesión?');
     if (confirmed) {
       setUser(null);
-      // Elimina la información del usuario del almacenamiento local al cerrar la sesión
       localStorage.removeItem('user');
     }
   };
@@ -76,6 +76,7 @@ export const Login = () => {
               <TransitionsModal />
               <Button variant="contained" className='profilebtn none2'><FontAwesomeIcon icon={faUser} /><span>Profile</span></Button>
               <Button variant="contained" onClick={handleLogout} className='logoutbtn none2'><FontAwesomeIcon icon={faRightFromBracket} /><span>Log Out</span></Button>
+              <Button variant='contained' onClick={masivadinos} startIcon={<UploadIcon/>}>Cargar Datos</Button>
             </div>
             <UnstyledTable />
           </>

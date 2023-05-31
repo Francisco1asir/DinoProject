@@ -24,6 +24,6 @@ const analytics = getAnalytics(app);
 const auth = getAuth(app)
 const provider = new GoogleAuthProvider()
 
-//monstar la ventana de elegir cuenta
+//mostar la ventana de elegir cuenta
 provider.setCustomParameters({ prompt: 'select_account' });
 export {auth,provider}

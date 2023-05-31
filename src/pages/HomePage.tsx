@@ -76,9 +76,6 @@ export const HomePage = () => {
                 <img className='dinopeso' src='https://www.dododex.com/media/item/Weight.png' alt='' />
                 <h3>{dino.peso}</h3>
               </div>
-              <div className="btns">
-                {/* <Button onClick={() => dino.codigo && deleteDino(dino.codigo)} id='deletebtn' endIcon={<FontAwesomeIcon icon={faTrash} />}><span>Borrar</span></Button> */}
-              </div>
             </div>
           ))}
       </div>

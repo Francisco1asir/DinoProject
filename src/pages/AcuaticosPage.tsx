@@ -56,7 +56,6 @@ export const AcuaticosPage = () => {
       </form>
       <div className='cardscollection'>
         {dinosaurios
-          .slice(0, 100)
           .map((dino) => (
             <div className='items'>
               <figure id='figimg'>
